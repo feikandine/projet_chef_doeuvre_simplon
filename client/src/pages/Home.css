@@ -1,0 +1,23 @@
+.Homes{
+background: url(../Assets/Immo-images/Image-home.jpg) center/cover;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ /* .SearchContener{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #862525;
+    margin: 100px auto 0;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+  }
+   */
+   .bloc-onglets{
+    
+   }
