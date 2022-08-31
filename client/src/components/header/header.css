@@ -1,0 +1,58 @@
+.header{
+    
+    width: 100vw;
+   
+}
+.headercontainer{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.greetext{
+    flex: 0 1 50%;
+    display: grid;
+    place-content: center;
+    color: white;
+  
+    
+    
+}
+.greetext h1{
+    flex: 0 1 50%;
+    text-align: center;
+    font-size: 3rem;
+}
+.searchbox{
+
+    flex: 0 1 50%;
+    text-align: center;
+  
+    
+    
+    
+   
+    
+}
+.headerinput{
+    width: 60%;
+    font-weight: 500;
+    height: 55px;
+    border: 2px solid #2A9D8F;
+}
+
+
+.headerbtn{
+    background-color: #2A9D8F;
+    color: white;
+    font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  height: 61px;
+width: 13%;
+font-size: 15px;
+border: 2px solid #2A9D8F
+
+}

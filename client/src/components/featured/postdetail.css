@@ -1,0 +1,13 @@
+.detail{
+    width: 100%;
+    margin: auto;
+    
+}
+.detailcontainer{
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+*{
+    border: solid;
+}
