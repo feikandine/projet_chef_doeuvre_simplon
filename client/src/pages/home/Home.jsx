@@ -14,7 +14,7 @@ const Home = () => {
             <Headerbox/>
             <div className="homecontainer"></div>
             <Post/>
-            <h2>Les Detail sur votre prochain chez-vous!!!</h2>
+            <h2>Les Details sur votre prochain chez-vous!!!</h2>
             <Postdetail/>
         </div>
     

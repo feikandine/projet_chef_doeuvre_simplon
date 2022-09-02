@@ -35,7 +35,7 @@ const Postdetail = () => {
                     </div>
                     <div className="autreDetail">
                         <h2>Autres details</h2>
-                        <p>Nombre de chambres :  <span>4</span></p>
+                        <p>Nombre de chambres : <span>4</span> </p>
                         <p> Salon  :  <span>2</span></p>
                         <p>Cuisine interne :  <span>1</span></p>
                         <p>Cuisine externe :  <span></span></p>

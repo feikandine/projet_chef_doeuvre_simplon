@@ -1,6 +1,7 @@
 import React from 'react';
 import "./header.css";
 
+
 const Headerbox = () => {
     return (
         <div className='header' style={{backgroundImage:"url(/image-home.jpg)",backgroundRepeat:"no-repeat",backgroundPosition:"cover",backgroundSize:"cover"} }>

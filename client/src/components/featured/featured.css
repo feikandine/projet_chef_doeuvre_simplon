@@ -10,6 +10,7 @@
 }
 .titre{
     width: 100%;
+    
     text-align: center;
     background-color: #f5f4f5;
     color: #2A9D8F;
@@ -17,14 +18,13 @@
 .featuredcontainer{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+   flex-wrap: wrap;
+    justify-content:space-around;
     background-color: #f5f4f5;
-    gap: 20px;
+    gap: 10px;
    
 }
-*{
-    /* border: solid; */
-}
+
 .featuredItem{
     border: 5px solid white;
     border-radius:  15px 15px 15px 15px;
@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    
     
     
 }

@@ -8,17 +8,17 @@ const Navbar = () => {
             <div className="navcontainer">
                 <span className='logo'>Home's Parck</span>
                 <div className="navlink">
-                    <NavLink to="/Home">
+                    <NavLink to="/">
                         Accueil
                     </NavLink>
                 </div>
                 <div className="navlink">
-                <NavLink to="/Annonces">
+                <NavLink to="/Annonce">
                   Nos Annonces
                 </NavLink>
                 </div>
                 <div className="navlink">
-                <NavLink to="/Services">
+                <NavLink to="/Service">
                  Nos Services
                 </NavLink>
                 </div>
