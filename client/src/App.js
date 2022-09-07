@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";  // c'est ici que vont se gerer les chemain des pages 
+import Postdetail from './components/featured/Postdetail';
 import Annonce from './pages/annonces/Annonce';
 import Home from './pages/home/Home'; 
 
@@ -14,6 +15,7 @@ const App = () => {
      <Route path='/louer'element={<Annonce/>}/> 
      <Route path='/Acceuil'element={<Home/>}/>
      <Route path='/Annonce'element={<Annonce/>}/>
+     <Route path='/Postdetail'element={<Postdetail/>}/>
     </Routes>
     </BrowserRouter>
   );

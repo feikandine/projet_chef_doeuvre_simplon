@@ -2,7 +2,7 @@ import React from 'react';
 import { Features } from './data';
 import { NavLink } from 'react-router-dom';
 import "./featured.css";
-import Postdetail from './Postdetail';
+import { Link } from 'react-router-dom';
 
 const Post = () => {
     return (
@@ -27,7 +27,9 @@ const Post = () => {
                                         <h3>Annonce Nº{post.num} </h3>
                                         <h3>Localité  :  {post.loc}</h3>
                                         <h2>{post.prix} F CFA</h2>
-                                        <button className='featuredBtn'  onClick={Postdetail}> Plus de detail  </button>
+                                       <Link to="/Postdetail">
+                                        <button className='featuredBtn' > Plus de detail  </button>
+                                       </Link>
                                     </div>
 
                                 </div>
