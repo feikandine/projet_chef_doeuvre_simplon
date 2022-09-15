@@ -33,10 +33,14 @@ const Headerbox = () => {
 
 
                     <div className="searchbox">
-                        {/* <input type="text"placeholder='gfddghj' className='headerinput' /> */}
+      
                         <div className="searchboxItem">
-                            <input type="text" placeholder='what do you want?' className='searchboxInput' />
+                            
                         </div>
+                        <BienForm/>
+                        
+  
+
 
                         {/* <div className="searchboxItem">
                         <span className='Icon'>Type de bien</span>
@@ -48,9 +52,10 @@ const Headerbox = () => {
                         <span className='searchboxText'>Kegué Adidogomé Agoè Avedji</span>
                     </div> */}
                         <div className="searchboxItem">
-                            <span className='Icon'>Critères</span>
-                            <span className='searchboxText'> {`${options.chambre}chambre . ${options.cuisine} cuisine . ${options.salon} salon. ${options.sanitaire} sanitaire `} </span>
+                            <span onClick={()=> setOpenOptions(!openOptions)} className='Icon' >Critères</span>
+                            <div  onClick={()=> setOpenOptions(!openOptions)} className='searchboxText'> {`${options.chambre}cham . ${options.cuisine} cuis . ${options.salon} salon. ${options.sanitaire} sani `} </div>
                             {/* zone de choix de critaires */}
+                            {openOptions &&
                             <div className="options">
                                 <div className="optionItem">
                                     <span className='optionText'>chambre</span>
@@ -98,8 +103,10 @@ const Headerbox = () => {
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> }
+                           
                         </div>
+                        
 
                         <div className="searchboxItem">
                             <button searchbtn>Search</button>
@@ -113,5 +120,78 @@ const Headerbox = () => {
         </div>
     );
 };
+class BienForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: 'coconut'};
+  
+      this.handleChange = this.handleChange.bind(this);
+    //   this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+  
+    // handleSubmit(event) {
+    //   alert('Votre parfum favori est : ' + this.state.value);
+    //   event.preventDefault();
+    // }
+  
+    render() {
+      return (
+        <form  className='searchboxItem' onSubmit={this.handleSubmit}>
+            <label>
+            Vous desirez?:
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value="grapefruit">Louer</option>
+              <option value="lime">Acheter</option>
+             
+              
+
+            </select>
+          </label>
+
+
+
+          <label>
+            Type de bien :
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value="appartement">Appartement</option>
+              <option value="maison">Maison</option>
+              <option value="boutique">Boutique</option>
+              <option value="magasin">Magasin</option>
+              <option value="bureau">Bureau</option>
+              <option value="terrain">Terrain</option>
+              
+
+            </select>
+          </label>
+          {/* <input type="submit" value="Envoyer" /> */}
+
+
+          <label>
+            Type de bien :
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value="grapefruit">Apartement</option>
+              <option value="lime">Maison</option>
+              <option value="coconut">Boutique</option>
+              <option value="mango">Magasin</option>
+              <option value="mango">Bureau</option>
+              <option value="mango">Terrain</option>
+              
+
+            </select>
+          </label>
+        </form>
+
+        
+        
+      );
+    }
+  }
+  
+  
+  
 
 export default Headerbox;

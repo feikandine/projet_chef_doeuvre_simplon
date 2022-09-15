@@ -1,0 +1,29 @@
+.Plist{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.PlistItem{
+    flex:1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.PlistImg{
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+
+
+}
+.PlistTitles>h1{
+    font-size: 18px;
+    color:#2A9D8F;
+}
+.PlistTitles h2{
+    font-size: 14px;
+    
+    font-weight: 300;
+}
