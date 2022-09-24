@@ -1,20 +1,31 @@
 import React from 'react';
 import Imgannonce1 from "../../images/jardin-maison1.jpg"
 import Imgannonce3 from "./annonce1.jpg";
+import Footer from '../footer/footer';
 import "./postdetail.css";
+import Lignsepa from '../offline/lignsepa';
+import Navbar from '../navbar/Navbar';
+import NavScrollExample from '../navbar/Navbar';
 
 const Postdetail = () => {
     return (
         <div className='detail'>
-            <h3>Annonce Nº 0003</h3>
+            <NavScrollExample/>
+            <br />
+
+            <h2 className='datail-greetext'>Les Details sur votre prochain chez-vous!!!</h2>
+             
+           
             <div className='detailcontainer'>
 
 
                 <div className="detailImgbox">
+                    <br />
                     <div className="imgBox">
                         <img src={Imgannonce3} alt="" />
                     </div>
                     <div className="firstInfo">
+                    <h3>Annonce Nº 0003</h3>
                         <p> Coux Mensuel : <span>400.000 F CFA</span></p>
                         <p> Avence : <span>6 Mois</span></p>
                         <p> Ville : <span>Lomé</span></p>
@@ -46,9 +57,13 @@ const Postdetail = () => {
                         <p>Menage :  <span>1</span></p>
                         
                     </div>
+                     
                 </div>
+                
             </div>
-
+            <br />
+            <Lignsepa />
+            <Footer/>
         </div>
     );
 };

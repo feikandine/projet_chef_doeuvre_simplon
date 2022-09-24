@@ -5,12 +5,17 @@
     
     
 }
+.datail-greetext{
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+}
 .detailcontainer{
     max-width: 1024px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-   border: 2px solid ;
+   /* border: 2px solid ; */
     margin: auto;
 }
 
@@ -67,12 +72,14 @@ color: #9e750c;
    display: flex; 
    flex-direction: column;
    width: 80%;
-   border: 2px solid;
+   
+   /* border: 2px solid; */
    
 }
 .autreDetail {
-    border: 2px solid;
+    border: 2px solid #9e750c;
     background-color: #e9c56a6c;
+    padding-bottom: 30px;
 
 }
 .autreDetail h2{
@@ -98,3 +105,5 @@ font-size: 25px;
     padding-top: 1%;
     background-color:rgba(255, 0, 0, 0.44);
 }
+
+

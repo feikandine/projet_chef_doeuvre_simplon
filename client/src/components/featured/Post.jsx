@@ -18,7 +18,7 @@ const Post = () => {
                                 // ici nous avons le model des post d'annonce
                             
                                 <div className="featuredItem">
-                                    {/* <div className="image">
+                                    <div className="image">
                                         <img src={post.img} alt="" className='featured-images' />
                                         </div>
                                     <div className='featuredInfo'>
@@ -29,7 +29,7 @@ const Post = () => {
                                        <Link to="/Postdetail">
                                         <button className='featuredBtn' > Plus de detail  </button>
                                        </Link>
-                                    </div> */}
+                                    </div>
 
                                 </div>
                         
