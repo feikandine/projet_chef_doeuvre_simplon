@@ -63,7 +63,7 @@ import"./Navbar.css"
 
 function NavScrollExample() {
   return (
-    <Navbar  expand="lg" id='navcontainer'>
+    <Navbar  expand="lg" id='navcontainer' className='navbarcontainer'>
       <Container fluid>
         <Navbar.Brand href="#" id='logo'>Home's Park</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -74,7 +74,7 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link href="/">Accueil</Nav.Link>
-            <Nav.Link href="/Annonce"> Nos Annonces</Nav.Link>
+            <Nav.Link href="/Annonce">  Annonces</Nav.Link>
             <Nav.Link href="/service">Services</Nav.Link>
             <Nav.Link href="/About">A Propos</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
@@ -92,9 +92,7 @@ function NavScrollExample() {
             <Nav.Link href="/Connexion">S'identifier</Nav.Link>
             <Nav.Link href="/Identifier">S'enregistrer</Nav.Link>
             
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            
           </Nav>
           {/* <Form className="d-flex">
             <Form.Control

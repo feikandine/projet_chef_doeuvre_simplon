@@ -52,17 +52,18 @@
 .featuredInfo h2{
   
     background-color:#2A9D8F ;
-   
+   font-size: 25px;
     height: 30px;
     border-radius: 25px;
     color: white;
-    padding: 10px;
+
     text-align: center;
 }
 .featuredBtn{
-    width:70% ;
+    width:100% ;
     border: #f5f4f5;
     font-size: 15px;
+    
 
 
 }

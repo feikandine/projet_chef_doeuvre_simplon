@@ -2,8 +2,6 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-
-import Row from 'react-bootstrap/Row';
 import Location from './/Location.png'
 import serviRenovation from './/serviRenovation.png'
 import './service.css'
@@ -13,10 +11,10 @@ const Service = () => {
 
 
     return (
-        <div className='servicontainer'>
+        <div className='servicontainer' >
             <h1>Nos services</h1>
 
-            <div className="container text-center">
+            <div className="container text-center servicebox">
                 <div className="row row-cols-2">
                     <div className="col">
                         <img src={Location} alt="" />

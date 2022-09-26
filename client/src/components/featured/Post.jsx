@@ -1,6 +1,8 @@
 import React from 'react';
-import { Features } from './data';
+import { Features } from './Louer';
 import "./featured.css";
+import Button from 'react-bootstrap/Button';
+
 import { Link } from 'react-router-dom';
 
 const Post = () => {
@@ -16,8 +18,9 @@ const Post = () => {
                     Features.map((post) => {
                         return (
                                 // ici nous avons le model des post d'annonce
-                            
+                                
                                 <div className="featuredItem">
+                                    
                                     <div className="image">
                                         <img src={post.img} alt="" className='featured-images' />
                                         </div>
@@ -27,9 +30,12 @@ const Post = () => {
                                         <h3>Localité  :  {post.loc}</h3>
                                         <h2>{post.prix} F CFA</h2>
                                        <Link to="/Postdetail">
-                                        <button className='featuredBtn' > Plus de detail  </button>
+                                       <Button  className='featuredBtn' variant="light">Plus de detail</Button>
                                        </Link>
+
+                                       
                                     </div>
+                                
 
                                 </div>
                         

@@ -60,4 +60,10 @@ export const Features= [
         loc: "Kpalimé-TOGO",
         prix: 400000
      },
+     {
+      img: img3,
+      num: "0003",
+      loc: "Kpalimé-TOGO",
+      prix: 400000
+   },
 ]

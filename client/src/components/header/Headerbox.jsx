@@ -42,15 +42,7 @@ const Headerbox = () => {
   
 
 
-                        {/* <div className="searchboxItem">
-                        <span className='Icon'>Type de bien</span>
-                        <span className='searchboxText'>Maison Apartement Boutique Villa Chambre & Salon </span>
-                    </div> */}
-
-                        {/* <div className="searchboxItem">
-                        <span className='Icon'>Zone</span>
-                        <span className='searchboxText'>Kegué Adidogomé Agoè Avedji</span>
-                    </div> */}
+                       
                         <div className="searchboxItem">
                             <span onClick={()=> setOpenOptions(!openOptions)} className='Icon' >Critères</span>
                             <div  onClick={()=> setOpenOptions(!openOptions)} className='searchboxText'> {`${options.chambre}cham . ${options.cuisine} cuis . ${options.salon} salon. ${options.sanitaire} sani `} </div>
@@ -133,10 +125,7 @@ class BienForm extends React.Component {
       this.setState({value: event.target.value});
     }
   
-    // handleSubmit(event) {
-    //   alert('Votre parfum favori est : ' + this.state.value);
-    //   event.preventDefault();
-    // }
+   
   
     render() {
       return (

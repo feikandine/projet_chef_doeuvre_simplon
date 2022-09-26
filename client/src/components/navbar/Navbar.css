@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 #logo{
-    color:goldenrod;
+    color: #2A9D8F;
     font-size: 2em;
     
     /* font-weight: 500;
@@ -28,22 +28,8 @@
     color: #2A9D8F; */
 }
 
-#navcontainer{
+.navbarcontainer{
 
-    background-color: #2A9D8F;
-}
-/* .navbutton{
-    margin-left: 20px;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    color: #2A9D8F;
-}
-.navlink a{
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-} */
-@media screen {
     
 }
+
