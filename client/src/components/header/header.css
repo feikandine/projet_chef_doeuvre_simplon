@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: auto;
   
 }
@@ -28,20 +29,20 @@
    
 }
 .searchbox{
-    height: 50px;
+    height: 100px;
     flex: 0 1 50%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     border-radius: 5px;
     width: 100%;
     position: absolute;
     bottom: 50px;
     
    
-    max-width: 1054px;
+    max-width: 1024px;
     background-color: #E9C46A;
     transform: translate(25%, -0%);
     

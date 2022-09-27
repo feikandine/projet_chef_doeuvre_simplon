@@ -12,6 +12,7 @@ import "./home.css"
 
 import Navbar from '../../components/navbar/Navbar';
 import NavScrollExample from '../../components/navbar/Navbar';
+import ContactList from '../Contact/ContactList';
 
 
 const Home = () => {
@@ -21,12 +22,14 @@ const Home = () => {
             <NavScrollExample/>
             <Headerbox/>
             <Lignsepa/>
+            
             {/* <div className="homecontainer">
                 <h1 className='hometitle'>parcourir par type d'annonce</h1>
                 <PropertyList/>
             </div> */}
             <Post/>
-            <div className='contact-container '>
+            <ContactList/>
+            {/* <div className='contact-container '>
     
     <br /> <br /><br />
      <div className="container">
@@ -75,7 +78,7 @@ const Home = () => {
       <br /><br />
       
     </div>
-           
+            */}
             
             
             <br />
